@@ -3,12 +3,12 @@ p {color: black;
     font-size: 16px;
     font-family: 'Playfair Display', serif;}
     
-h1 {color: rgb(255, 22, 139);
+h1 {color: #ff168b;
     font-size: 36px;
     font-family: 'Croissant One';
     letter-spacing: -2px;}
 
-h2 {color:rgb(255, 22, 139);
+h2 {color:#ff168b;
     font-size: 24px;
     font-family: Georgia, 'Times New Roman', Times, serif;}
 
@@ -16,19 +16,21 @@ ul {color:(black);
     font-size: 16px;
     font-family: Georgia, 'Times New Roman', Times, serif;}
 
-h3 {color:rgb(255, 22, 139);
-    font-size: 20;
+h3 {color:#ff168b;
+    font-size: 16px;
     font-family: Georgia, 'Times New Roman', Times, serif;}
 
     
-Button {
-        background-color: #b9b9b9; /* Default button color */
-        color: #020202;
-        padding: 10px 20px;
-        border: none;
-        cursor: pointer;}
+Button {background-color: #cacaca; 
+    color: #000000;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    width: 100%}
 
-    /* Change the button color on hover */
-    #contactButton:hover {
-        background-color: rgb(255, 22, 139); 
-    }
+#contactButton:hover {background-color: rgb(255, 22, 139);
+    color: rgb(255, 255, 255);
+    transition-duration: 0.4s;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)}

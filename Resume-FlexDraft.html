@@ -18,13 +18,13 @@
                 <div class="col">
                     <h1>Sierra Marie Bonn</h1>
                     <hr>
-                    <h3>Project Management and Non-Profit Professional</h3>
+                    <h2>Project Management and Non-Profit Professional</h2>
                     <hr>
-                    <p> Pretend that this is where my Objective Statement would go. </p>
+                    <p> I am driven by the belief that education is the cornerstone of empowerment. My goal is to continue leveraging my expertise to create avenues for learning, especially in STEAM fields, and inspire the next generation of innovators. I thrive in dynamic environments, relish challenges, and am eager to contribute to initiatives that make a lasting difference.</p>
                 </div>
-            <div class="col">
-                <img src="sierra resume headshot.png" alt="Sierra's Headshot" style="width: 200px; height: 300px;">
-            </div>
+                <div class="col">
+                    <img src="sierra resume headshot.png" alt="Sierra's Headshot" style="width: 50%; height: auto;">
+                </div>
         </div>
      </div>
 <hr>
@@ -38,19 +38,15 @@
                             <title>Email Me Button</title>
                         </head>
                         <body>
-                            <button id="contactButton">Email Me </button>
+                            <button id="contactButton">Email <br> Me </button>
                         
                             <script>
-                                
                                 function openEmailClient() {
                                     var email = "sierramariebonn@gmail.com"; 
                                     var subject = "Regarding your resume";
                                     var body = "Hi, I'm interested in your resume..."; 
-                        
                                     var mailtoLink = "mailto:" + email + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-                        
                                     window.location.href = mailtoLink; }
-    
                                 document.getElementById("contactButton").addEventListener("click", openEmailClient);
                             </script>
                         </body>
@@ -62,7 +58,7 @@
                             <title>Linkedin In Button</title>
                         </head>
                             <a href="https://www.linkedin.com/in/sierramariebonn" target="_blank">
-                            <button id="contactButton">Connect with me on LinkedIn</button></a> 
+                            <button id="contactButton">Connect with me <br> on LinkedIn</button></a> 
                     </div>
                     <div class="col">
                         <head>
@@ -71,7 +67,7 @@
                             <title>Website Button</title>
                         </head>
                         <a href="https://www.sierrabonn.com" target="_blank">
-                            <button id="contactButton">Visit my website</button>
+                            <button id="contactButton">Visit my <br> website</button>
                          </a>
                     </div>
                     <div class="col">
@@ -81,7 +77,7 @@
                             <title>Instagram Button</title>
                         </head>
                         <a href="https://www.instagram.com/sierramariebonn" target="_blank">
-                            <button id="contactButton">Follow me on Instagram</button>
+                            <button id="contactButton">Follow me <br> on Instagram</button>
                         </a>
                     </div>
                 </div>
@@ -147,28 +143,57 @@
     </div>    
 <hr>
     <div class="container">
+        <section class="News">
+            <h2> Sierra in the News </h2>
+            <div class="row">
+                <div class="col">
+                    <h3> Ad Astra Technology Summit</h3>
+                    <img src="Sierra-and-Steve.JPG" alt="Sierra and Steve Wozniak" style="width: 200px; height: auto; padding-left: 30%;">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>Sierra-and-Steve Button</title>
+                    </head>
+                        <a href="https://www.butlercountytimesgazette.com/2023/10/09/ad-astra-technology-summit/" target="_blank">
+                        <button id="contactButton">Read the Article</button></a> 
+                </div>
+                <div class="col">
+                    <h3>Women in STEAM Week Proclmation</h3>
+                    <img src="Proclamation.png" alt="Sierra and the Women in STEAM Week Procalmation" style="width:200px; height:auto; padding-left:30%;">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>Proclamation Button</title>
+                    </head>
+                        <a href="https://thesunflower.com/48574/arts-and-culture/features/students-book-encourages-young-girls-to-pursue-their-ambitions/#:~:text=Therefore%2C%20Women%20in%20STEAM%20Week,very%20challenging%2C%E2%80%9D%20Bonn%20said." target="_blank">
+                        <button id="contactButton">Read the Article</button></a> 
+                </div>   
+                <div class="col">
+                    <img src="speaking.JPG" alt="Sierra speaking" style="width: 200px; height: auto; padding-left: 30%;">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>Sierra Speaking</title>
+                    </head>
+                        <a href="https://www.butlercountytimesgazette.com/2023/10/09/fentanyl-town-hall/" target="_blank">
+                        <button id="contactButton">Read the Article</button></a> 
+                </div>
+            </div>
+        </section>
+    </div>
+<hr>
+    <div class="container">
         <footer>
-            <p>References available upon request</p>
+            <h3>References Available Upon Request</h3>
             <p id="timestamp"></p>
         </footer>
     </div>
     <script>
-        // Function to update the date and time stamp
-        function updateTimestamp() {
-            // Create a new Date object to get the current date and time
-            var currentDate = new Date();
-
-            // Format the date and time (e.g., "September 6, 2023, 15:30:00")
-            var formattedDate = currentDate.toLocaleString();
-
-            // Get the HTML element where you want to display the date and time
-            var timestampElement = document.getElementById("timestamp");
-
-            // Update the content of the element with the formatted date and time
-            timestampElement.textContent = "Last updated: " + formattedDate;
-        }
-
-        // Call the function to initialize the date and time when the page loads
+        function updateTimestamp() 
+        {var currentDate = new Date();
+        var formattedDate = currentDate.toLocaleString();
+        var timestampElement = document.getElementById("timestamp");
+        timestampElement.textContent = "Page Last Reloaded On: " + formattedDate;}
         window.onload = updateTimestamp;
     </script>
 </body>
